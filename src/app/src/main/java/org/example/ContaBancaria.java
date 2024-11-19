@@ -1,5 +1,5 @@
 
-package davi;
+package org.example;
 
 public class ContaBancaria {
     private String titular;

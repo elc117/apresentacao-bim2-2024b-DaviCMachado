@@ -1,5 +1,5 @@
 
-package davi;
+package org.example;
 
 public interface Veiculo {
     String acelerar();

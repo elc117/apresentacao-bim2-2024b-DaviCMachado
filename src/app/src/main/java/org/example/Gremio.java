@@ -1,6 +1,6 @@
 
 
-package davi;
+package org.example;
 
 public class Gremio {
     // Método que realiza a soma de dois números inteiros
