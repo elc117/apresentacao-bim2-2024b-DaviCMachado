@@ -16,7 +16,6 @@ public class ContaBancariaTest {
         conta.setTitular("Maria");
         assertEquals("Maria", conta.getTitular());
     
-        // Uso do parâmetro delta é necessário para comparar valores do tipo double
         assertEquals(1000.0, conta.getSaldo(), 0.0001);
     }
 
@@ -26,7 +25,7 @@ public class ContaBancariaTest {
 
         conta.depositar(500.0);
         assertEquals(1500.0, conta.getSaldo(), 0.0001);
-
+  
         conta.sacar(200.0);
         assertEquals(1300.0, conta.getSaldo(), 0.0001);
 

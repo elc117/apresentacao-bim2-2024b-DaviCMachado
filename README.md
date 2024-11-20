@@ -10,7 +10,7 @@ Facilita a criação, execução automática de testes e apresentação dos resu
 
 Já vem configurado nas versões recentes de IDE’s como Eclipse, NetBeans, JBuilder, BlueJ e outros.
 
-Em outros casos, faça o download do arquivo junit.jar em www.junit.org, após inclua-o no classpath para compilar e rodar programas com teste.
+Em outros casos, faça o download do arquivo junit.jar em www.junit.org.
 
 ## O Que São Testes Unitários?
 
@@ -56,13 +56,19 @@ Principais Fatores:
 
 - Situações críticas que necessitam robustez e adaptabilidade.
 
-## Testes Automatizados
+## Testes em Java
 
-- Pode ser vantajoso possuir uma rotina de testes automatizados e você pode criar uma para seu projeto.
+- Objetos: Testes unitários verificam se os objetos são criados corretamente e se seus estados e comportamentos estão de acordo com o esperado. Por exemplo, validam valores padrão de atributos ou o funcionamento de métodos relacionados a um objeto específico.
+
+- Classes: Testam se a classe funciona como um todo, incluindo interações entre seus métodos e a consistência de seus estados internos. Além disso, validam herança, interfaces e polimorfismo.
+
+- Métodos: Focam em verificar se um método individual produz o resultado esperado com diferentes entradas, considerando tanto os casos normais quanto os casos de erro.
+
+## Testes Automatizados
 
 - Geralmente focado em testes pontuais para garantir o funcionamento e segurança do sistema.
 
-- Nessa perspectiva, o JUnit possui ferramentas que facilitam a vida do programador.
+- JUnit possui ferramentas que possibilitam sua implementação.
 
 ## Anotações: 
 
@@ -72,9 +78,6 @@ Principais Fatores:
 
 - (@Before e @After foram substituidos por @BeforeEach e @AfterEach no JUnit 5)
 
-## Execução e Relatórios: 
-
-JUnit permite que os testes sejam executados de forma automatizada, e você pode integrar com ferramentas como o Maven ou Gradle para execução contínua de testes.
 
 ## Teste Unitário: O que testar?
 
@@ -89,11 +92,6 @@ A principal regra para saber o que testar é: “Tenha criatividade para imagina
 - Não teste métodos triviais, tipo get e set;
 
 - No caso de um método set, só faça o teste caso haja validação de dados;
-
-
-### Achou um bug? 
-
-- Não conserte sem antes escrever um teste que o pegue (se não o fizer, ele volta).
 
 
 ## Implementando Testes 
@@ -145,6 +143,48 @@ Os resultados completos ficam salvos em um arquivo "index.html" dentro de uma pa
 Também é possível usar comandos que detalhem o processo de execução dos testes, como as flags --info e --debug
 
 
+## Classes implementadas
+
+### Classe Animal
+![img](img/animal.png)
+
+### Classe Conta Bancaria
+![img](img/conta.png)
+
+### Classe Veiculo
+![img](img/veiculo.png)
+
+## Testes Implementados
+
+### Teste Animal
+![img](img/animalTest.png)
+
+### Teste Conta
+![img](img/contaTest.png)
+
+### Teste Veiculo
+![img](img/veiculoTest.png)
+
+## Output Grafico
+
+![img](img/test_fail.png)
+
+---------
+
+![img](img/test_failed2.png)
+
+---------
+
+![img](img/all_tests.png)
+
+---------
+
+![img](img/tests_passed.png)
+
+---------
+
+![img](img/package.png)
+
 ## Referências: 
 
 ### devmedia: 
@@ -154,3 +194,9 @@ https://www.devmedia.com.br/junit-tutorial/1432
 https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
 
 https://www.devmedia.com.br/automacao-de-testes/10249
+
+
+### mooc.fi
+
+https://java-programming.mooc.fi/part-6/3-introduction-to-testing
+
